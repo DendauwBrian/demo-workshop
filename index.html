@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="manifest" href="/manifest.json" />
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style.css" />
     <title>PWA workshop</title>
   </head>
   <body>
@@ -76,13 +76,13 @@
               console.log("ServiceWorker registration failed: ", err);
             }
           );
-        });
-        navigator.serviceWorker.addEventListener("message", function(event) {
-          console.log("Event recieved:", event.data);
-          switch (event.data.msg) {
-            case "refresh":
-              window.location.reload();
-          }
+          navigator.serviceWorker.addEventListener("message", function(event) {
+            console.log("Event recieved:", event.data);
+            switch (event.data.msg) {
+              case "refresh":
+                window.location.reload();
+            }
+          });
         });
       }
     </script>

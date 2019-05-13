@@ -6,10 +6,10 @@
 - Famous examples (Twitter, Ali express, Trivago, Washington Post...)
 - Code
   - Minimum req vs 'all the way'
-  - Service worker | Manifest
+  - Manifest
+    - Important fields (5)
+  - Service worker
     - Caching strategies
-  - 
-    - Important fields (3)
 
 ## Demo
 
